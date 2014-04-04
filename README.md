@@ -195,7 +195,7 @@ You can then do the following:
     # or to run in the foreground
     RAILS_ENV=production bin/delayed_job run --exit-on-complete
 
-**Rails 3:** *replace bin/delayed_job with script/delayed_job*
+**Rails 3:** *script/delayed_job is used instead of bin/delayed_job*
 
 Workers can be running on any computer, as long as they have access to the
 database and their clock is in sync. Keep in mind that each worker will check
@@ -222,8 +222,7 @@ To restart multiple delayed_job workers:
 
     RAILS_ENV=production bin/delayed_job -n2 restart
 
-**Rails 4:** *replace bin/delayed_job with bin/delayed_job*
-
+**Rails 3:** *script/delayed_job is used instead of bin/delayed_job*
 
 
 Custom Jobs
